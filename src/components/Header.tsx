@@ -15,12 +15,12 @@ export const Header = ({ className }: HeaderProps) => {
           <MyComponents.Logo />
           <div className='flex items-center gap-x-6'>
             <MyComponents.Nav
-              containerStyles='hidden xl:flex gap-x-8 items-center'
-              linkStyles='flex justify-between intens-center gap-x-6'
-              underlineStyles=''
+              containerStyles='hidden lg:flex gap-x-8 items-center'
+              linkStyles='relative hover:text-primary transition-all'
+              underlineStyles='absolute left-0 top-full h-[2px] bg-primary w-full'
             />
             <MyComponents.ThemeToggler />
-            <div className='xl:hidden'>
+            <div className='lg:hidden'>
               <MyComponents.MobileNav />
             </div>
           </div>

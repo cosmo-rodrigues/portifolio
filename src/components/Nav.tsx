@@ -1,9 +1,12 @@
 'use client';
 
-import { cn } from '@/lib/utils';
-import { ComponentProps } from '@/types/component-props';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
+import { motion } from 'framer-motion';
+
+import { cn } from '@/lib/utils';
+import { ComponentProps } from '@/types/component-props';
 
 interface NavProps extends ComponentProps {
   containerStyles: string;
@@ -31,6 +34,15 @@ export const Nav = ({
           key={index}
           className={`capitalize ${linkStyles}`}
         >
+          {link.path === path && (
+            <motion.span
+              animate={{ y: 0 }}
+              className={underlineStyles}
+              initial={{ y: '-100%' }}
+              layoutId='underline'
+              transition={{ type: 'tween' }}
+            />
+          )}
           {link.name}
         </Link>
       ))}
