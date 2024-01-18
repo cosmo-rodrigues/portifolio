@@ -31,7 +31,7 @@ export const Hero = () => {
                   Contact me <Send size={18} />
                 </Shad.Button>
               </Link>
-              <Shad.Button className='gap-x2' variant='secondary'>
+              <Shad.Button className='gap-x-2' variant='secondary'>
                 Download CV
                 <Download size={18} />
               </Shad.Button>
