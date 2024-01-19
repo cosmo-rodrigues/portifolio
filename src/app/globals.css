@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   @layer base {
     :root {
@@ -28,7 +27,7 @@
       --ring: 9 99% 67%;
       --radius: 0.3rem;
     }
-  
+
     .dark {
       --background: 237 22% 20%;
       --foreground: 0 0% 95%;
@@ -56,17 +55,21 @@
 
 @layer base {
   * {
-    @apply border-border
+    @apply border-border;
   }
   body {
-    @apply bg-background text-foreground
+    @apply bg-background text-foreground;
   }
 }
 
 .h1 {
-  @apply text-6xl lg:text-[72px] lg:leading-[80px] tracking-[-2px] font-bold
+  @apply text-6xl lg:text-[72px] lg:leading-[80px] tracking-[-2px] font-bold;
 }
 
 .subtitle {
-  @apply text-muted-foreground text-lg mb-8 font-light
+  @apply text-muted-foreground text-lg mb-8 font-light;
+}
+
+.badge {
+  @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }

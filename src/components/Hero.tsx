@@ -42,6 +42,7 @@ export const Hero = () => {
             />
           </div>
           <div className='hidden lg:flex relative'>
+            <MyComponents.Badge icon={Ri.RiBriefcase4Fill} />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <div className='bg-hero_shape w-[600px] h-[500px] bg-no-repeat absolute -top-1 right-3'></div>
             <MyComponents.DevImage
