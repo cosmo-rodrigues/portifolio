@@ -42,9 +42,32 @@ export const Hero = () => {
             />
           </div>
           <div className='hidden lg:flex relative'>
-            <MyComponents.Badge icon={Ri.RiBriefcase4Fill} />
-            <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
-            <div className='bg-hero_shape w-[600px] h-[500px] bg-no-repeat absolute -top-1 right-3'></div>
+            {/* {badge 01} */}
+            <MyComponents.Badge
+              badgeText='Years Of Experience'
+              containerStyles='absolute top-[20%] -left-[8rem]'
+              endCountNum={3}
+              endCountText=''
+              icon={<Ri.RiBriefcase4Fill />}
+            />
+            {/* {badge 02} */}
+            <MyComponents.Badge
+              badgeText='Finished Projects'
+              containerStyles='absolute top-[50%] -left-[3rem]'
+              endCountNum={15}
+              endCountText=''
+              icon={<Ri.RiTodoFill />}
+            />
+            {/* {badge 03} */}
+            <MyComponents.Badge
+              badgeText='People Reached'
+              containerStyles='absolute top-[50%] right-0 min-w-[220px]'
+              endCountNum={1}
+              endCountText='M+'
+              icon={<Ri.RiTeamFill />}
+            />
+            <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-12'></div>
+            <div className='bg-hero_shape w-[600px] h-[500px] bg-no-repeat absolute -top-1 -left-12'></div>
             <MyComponents.DevImage
               containerStyles='w-[464px] h-[538px] bg-no-repeat relative bg-bottom'
               imgSrc='/hero/developer.png'

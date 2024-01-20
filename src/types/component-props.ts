@@ -1,1 +1,1 @@
-export interface ComponentProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface ComponentProps extends React.HTMLAttributes<HTMLDivElement> { }
