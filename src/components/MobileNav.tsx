@@ -3,12 +3,32 @@
 import { cn } from '@/lib/utils';
 import { ComponentProps } from '@/types/component-props';
 
-interface MobileNavProps extends ComponentProps {}
+import * as Shad from '@/components/ui';
+import * as MyComponents from '.';
+import { AlignJustify } from 'lucide-react';
 
-export const MobileNav = ({ className }: MobileNavProps) => {
+export const MobileNav = () => {
   return (
-    <div className={cn(className)}>
-      <h1>MobileNav</h1>
-    </div>
+    <Shad.Sheet>
+      <Shad.SheetTrigger asChild>
+        <AlignJustify className='cursor-pointer' />
+      </Shad.SheetTrigger>
+      <Shad.SheetContent>
+        <div className='flex flex-col items-center justify-between h-full py-8'>
+          <div className='flex flex-col items-center gap-y-32'>
+            <MyComponents.Logo />
+            <MyComponents.Nav
+              underlineStyles=''
+              containerStyles='flex flex-col items-center gap-y-6'
+              linkStyles='text-2xl'
+            />
+          </div>
+          <MyComponents.Socials
+            containerStyles='flex gap-x-4'
+            iconStyles='text-2xl'
+          />
+        </div>
+      </Shad.SheetContent>
+    </Shad.Sheet>
   );
 };
