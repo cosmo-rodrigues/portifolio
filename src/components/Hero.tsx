@@ -20,10 +20,7 @@ export const Hero = () => {
             </div>
             <h1 className='h1 mb-4'>Hello, my name is Cosmo Rodrigues</h1>
             <p className='subtitle max-w-[490px] mx-auto lg:mx-0'>
-              {`I am an experienced Full Stack Developer (Front End heavy). With 3
-              years of experience in the software industry, I've been deeply
-              involved in crafting solutions that bridge the gap between
-              technology and real-world challenges.`}
+              {`Hello! I'm Cosmo Rodrigues, a passionate and experienced Full Stack Developer with a strong focus on front-end development, based in Brazil. Over the past 4+ years, I've been dedicated to designing and implementing solutions that bridge technology and real-world challenges, driving business growth and user satisfaction.`}
             </p>
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12'>
               <Link href='/contact'>
